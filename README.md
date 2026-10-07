@@ -122,11 +122,15 @@ Worst-of Call price increases with $\rho$. Higher correlation means assets move 
 
 ## Installation & Usage
 
+Requires [uv](https://docs.astral.sh/uv/). It installs Python and the dependencies automatically.
+
 ```bash
 git clone https://github.com/Leonard-ROGER/worst-of-option-pricer.git
 cd worst-of-option-pricer
-pip install -r requirements.txt
+uv sync
 ```
+
+Run the example below with `uv run python example.py` (save it as `example.py` at the root of the repository).
 
 ```python
 import numpy as np
@@ -153,7 +157,7 @@ print(price, se ,ci)
 ## Tests
 
 ```bash
-pytest tests/
+uv run pytest
 ```
 
 Three tests validate mathematical properties of the pricer:

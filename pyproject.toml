@@ -1,0 +1,15 @@
+[project]
+name = "worst-of-option-pricer"
+version = "1.1.0"
+description = "Monte Carlo pricer for worst-of options on correlated multi-asset baskets"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
